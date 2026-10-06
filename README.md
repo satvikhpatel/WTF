@@ -10,7 +10,7 @@ All practicals of the **WTF Lab** course, collected in one repository.
 
 ## 📖 About
 
-This repository contains the practical work I completed for the **[Full form of WTF] (WTF) Lab**. Each practical lives in its own folder with the source code and, where relevant, the output.
+This repository contains the practical work I completed for the **[Web Technology Framework] (WTF) Lab**. Each practical lives in its own folder with the source code and, where relevant, the output.
 
 ## 📂 Repository Structure
 
@@ -27,16 +27,16 @@ WTF/
 
 | No. | Title | Folder |
 | --- | ----- | ------ |
-| 1 | [Practical 1 title] | [Practical 1](./Practical%201) |
-| 2 | [Practical 2 title] | [Practical 2](./Practical%202) |
-| 3 | [Practical 3 title] | [Practical 3](./Practical%203) |
-| 4 | [Practical 4 title] | [Practical 4](./Practical%204) |
+| 1 | [Greenleaf Organics Private Ltd.] | [Practical 1](./Practical%201) |
+| 2 | [Department of Computer Science & Engineering] | [Practical 2](./Practical%202) |
+| 3 | [Secure Bank Ltd.] | [Practical 3](./Practical%203) |
+| 4 | [ShopeEase - Online Store] | [Practical 4](./Practical%204) |
 
 ## 🛠️ Technologies Used
 
-- [e.g., HTML, CSS, JavaScript]
-- [e.g., Node.js / Python / PHP]
-- [e.g., VS Code, Git, GitHub]
+- HTML, CSS, JavaScript
+- Node.js / Python / PHP
+- VS Code, Git, GitHub
 
 ## 🚀 Getting Started
 
@@ -68,13 +68,6 @@ cd WTF
    # node index.js
 ```
 
-## 📸 Screenshots
-
-_Add screenshots of your outputs here._
-
-```md
-![Practical 1 Output](./Practical%201/screenshot.png)
-```
 
 ## 🤝 Contributing
 
@@ -85,10 +78,11 @@ Feel free to open an issue or submit a pull request.
 
 **Satvik Patel**
 - GitHub: [@satvikhpatel](https://github.com/satvikhpatel)
+- Student at **CSE - CSPIT CHARUSAT University**.
 
 ## 📄 License
 
-This project is for educational purposes. Add a license (e.g., MIT) if you want others to reuse it.
+- This project is for educational purposes.
 
 ---
 
