@@ -1,10 +1,10 @@
-# 🧪 WTF Lab Practicals
+# 💻 WTF Lab Practicals
 
 All practicals of the **WTF Lab** course, collected in one repository.
 
-![Status](https://img.shields.io/badge/status-active-brightgreen)
-![Practicals](https://img.shields.io/badge/practicals-4-blue)
-![Made by](https://img.shields.io/badge/made%20by-satvikhpatel-informational)
+![Made by](https://img.shields.io/badge/Made%20by-satvikhpatel-orange)
+![Practicals](https://img.shields.io/badge/Practicals-4-white)
+![Status](https://img.shields.io/badge/Status-Active-brightgreen)
 
 ---
 
@@ -27,10 +27,10 @@ WTF/
 
 | No. | Title | Folder |
 | --- | ----- | ------ |
-| 1 | [Greenleaf Organics Private Ltd.] | [Practical 1](./Practical%201) |
-| 2 | [Department of Computer Science & Engineering] | [Practical 2](./Practical%202) |
-| 3 | [Secure Bank Ltd.] | [Practical 3](./Practical%203) |
-| 4 | [ShopeEase - Online Store] | [Practical 4](./Practical%204) |
+| 1 | Greenleaf Organics Private Ltd. | [Practical 1](./Practical%201) |
+| 2 | Department of Computer Science & Engineering | [Practical 2](./Practical%202) |
+| 3 | Secure Bank Ltd. | [Practical 3](./Practical%203) |
+| 4 | ShopeEase - Online Store | [Practical 4](./Practical%204) |
 
 ## 🛠️ Technologies Used
 
