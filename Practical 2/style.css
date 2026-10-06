@@ -1,0 +1,142 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    font-family: 'Times New Roman', Times, serif;
+    background: linear-gradient(to right, rgb(38, 145, 187),rgb(148, 223, 148));
+    color: black;
+    line-height: 1;
+}
+
+header
+{
+    background: linear-gradient(to right, #1082f5, #2fa202 );
+    color: white;
+    text-align: center;
+    padding: 30px;
+    box-sizing: border-box;
+}
+header:hover
+{
+    transform: scale(1.05);
+    transition: 0.3s;
+    background: linear-gradient(to left, #97fd6f, #81bbf4 );
+    color: rgb(21, 20, 17);
+    padding: 40px;
+}
+header p
+{
+    margin-top: 20px;
+}
+
+nav
+{
+    background: #00509d;
+    padding: 10px;
+}
+
+nav ul
+{
+    display: flex;
+    justify-content: center;
+    list-style:none;
+    flex-wrap: wrap;
+    color: white;
+}
+nav a
+{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding: 10px 20px;
+    transition: 0.3s;
+}
+nav:hover
+{
+    transform: scale(1.05);
+    transition: 0.3s;
+    background-color: #135ec1;
+    color: white;
+}
+nav a:hover
+{
+    transform: scale(1.05);
+    transition: 0.3s;
+    background: #64a3f5;
+    border-radius: 100px;
+    color: black;
+}
+.hero
+{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 50px;
+    background-color: #b1f6fb;
+    box-sizing: border-box;
+    border-radius: 20px;
+}
+.hero h1
+{
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+.hero:hover
+{
+    transform: scale(1.05);
+    transition: 0.3s;
+    background-color: rgb(0, 122, 170);
+    color: white;
+    padding: 60px;
+}
+.layout
+{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    padding: 20px;
+    gap: 20px;
+}
+.card{
+    background: white;
+    border: transparent solid 1px;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 10px 10px 20px rgb(0, 0, 0);
+    width: 600px;
+}
+.card:hover{
+    transform: scale(1.05);
+    transition: 0.3s;
+    background-color: rgb(160, 228, 255);
+    color: #003366;
+    padding: 20px;
+    
+}
+.card img
+{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+section
+{
+    margin-bottom: 0px;
+    position: unset;
+}
+footer
+{
+    background: #00509d;
+    color: white;
+    text-align: center;
+    padding: 40px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    img {
+        margin: 0 20px;
+        vertical-align: middle;
+        width: 50px;
+    }
+}

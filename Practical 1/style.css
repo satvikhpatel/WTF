@@ -1,0 +1,72 @@
+body{
+    font-family: 'Times New Roman', Times, serif;
+    background-color: rgb(213, 255, 206);
+    margin: 10px;
+}
+
+header
+{
+    background: linear-gradient(to right, rgb(2, 74, 23), rgb(164, 249, 164));
+    color:white ;
+    text-align: center;
+    padding: 10px;
+}
+
+nav
+{
+    background-color: rgb(185, 240, 185);
+    font-family:Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding: 10px;
+    color: rgb(0, 0, 0);
+}
+nav a{
+    text-decoration: none;
+    font-family:'Times New Roman', Times, serif;
+    color: black;
+    margin: 10px;
+}
+
+section
+{
+    background: linear-gradient(to right, rgb(94, 250, 89), rgb(249, 250, 249));
+    margin-top: 25px;
+    padding: 15px;
+    border: outset;
+}
+table
+{
+    background-color: rgb(157, 251, 168);
+    width: 80%;
+    border-collapse: collapse;
+}
+
+table, th, tr
+{
+    color: black;
+    border: 1px solid black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+aside
+{
+    background-color: yellow;
+    margin-top: 10px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 6px red dotted;
+}
+footer
+{
+    background : linear-gradient(to right, rgb(6, 102, 35), rgb(43, 229, 43));
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+
+    padding: 50px;
+}
+
+footer a{   
+    text-decoration: none;
+    color: white;
+}

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="style.css">
+<script src="script.js"></script>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Author" content="Satvik Patel">
+    <meta name="Description" content="This is the Website of Secure Bank Ltd.">
+    <title>Secure Bank Ltd.</title>
+</head>
+    <body>
+    <!--header-->
+    <header>
+        <img src="logo_1.png" alt="Company Logo" width="140">
+        <h1>Secure Bank Ltd.</h1>
+        <p>Your Trusted Financial Partner</p>
+    </header>
+    <hr>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a> | </li>
+            <li><a href="#loan">Loan Eligibility</a> | </li>
+            <li><a href="#emi">EMI Calculator</a> | </li>
+            <li><a href="#sic">Simple Interest Calculator</a> | </li>
+            <li><a href="#account-info">Account Info</a> | </li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+    </nav>
+    <hr>
+    <section id="home">
+        <section class="hero">
+            <h1>Welcome to Secure Bank Ltd.</h1>
+            <p>Providing Secure and Reliable Banking Solutions for Your Financial Needs.</p>
+            <button>Learn More</button>
+    </section>
+    <hr>
+    <main class="grid-container">
+        <section class="card" id="loan">
+            
+                <h2>Loan Eligibility</h2>
+                <label>Age :</label>
+                <input type="number" id="age" placeholder="Enter Your Age"><br><br>
+
+                <label>Monthly Salary :</label>
+                <input type="number" id="salary" placeholder="Enter Your Salary"><br><br>
+                <button onclick="checkLoanEligibility()">Check Eligibility</button><br><br>
+                <p   id="result"></p>
+        </section>
+    
+        <section class="card" id="emi">
+            
+                <h2>EMI Calculator</h2>
+                
+                <label>Loan Amount :</label>
+                <input type="number" id="loan1" placeholder="Enter Your Loan Amount">
+                <br><br>
+                <label>Interest Rate(%) :</label>
+                <input type="number" id="irate" placeholder="Enter Your Interest Rate(%)">
+                <br><br>
+                <label>Years :</label>
+                <input type="number" id="yr" placeholder="Enter Years">
+                <br><br>
+                <button onclick="calculateEMI()">Calculate EMI</button>
+                <p id="emiResult"></p>
+        </section>
+    
+        <section class="card" id="sic">
+            
+                <h2>Simple Interest Calculator</h2>
+                <label>Principal Amount :</label>
+                <input type="number" id="pamount" placeholder="Enter Principal Amount">
+                <br><br>
+                <label>Rate of Intererst(%) :</label>
+                <input type="number" id="ri" placeholder="Enter Rate of Interest">
+                <br><br>
+                <label>Years :</label>
+                <input type="number" id="yer" placeholder="Enter Years">
+                <br><br>
+                <button onclick="interestCalculator()">Calculate Interest</button>
+                <p id="interestresult"></p>
+                
+        </section>
+        <section class="card" id="account-info">
+            
+            <h2>Account Details</h2>
+    
+            <label for="accountType">Select Account Type:</label>
+            <select id="accountType" onchange="accountDetails()">
+            <option value="">-- Choose Account --</option>
+            <option value="Savings">Savings Account</option>
+            <option value="Current">Current Account</option>
+            <option value="Fixed Deposit">Fixed Deposit</option>
+            </select>
+            <p id="accountResult"></p>
+            <br>
+
+            <label>Interest Projection (10 Years):</label>
+            <button onclick="generateInterestTable()">Generate 10-Yr Interest Table</button>
+            <pre id="tableResult"></pre>
+            <br>
+
+            <label>Check Status:</label>
+            <input type="number" id="accBalance" placeholder="Enter Balance">
+            <input type="number" id="accYears" placeholder="Enter Years as Customer">
+            <button onclick="checkCustomerStatus()">Check Customer Status</button>
+            <p id="statusResult"></p>
+        </section>
+
+        <section class="card" id="contact">
+            <h2>Contact Us</h2>
+            <p>Number  : +91 9426010451</p>
+            <p>Email   :<a href="mailto:satvik.hitul.patel@gmail.com"> satvik.hitul.patel@gmail.com</a></p>
+            <p>Address : 123, Changa Bhavan, Valetva, Anand </p>
+        </section>
+    </main>
+    <hr>
+    <br>
+    <br>
+        <footer>
+            <p>&copy; 2026 Secure Bank Ltd. All rights reserved.</p>
+            <br>
+            <a href="https://www.facebook.com/profile.php?id=61591723166378" target="_blank"><img src="facebook.png" alt="Facebook" width="30"></a>Facebook
+            <a href="https://www.instagram.com/satvik_patel12" target="_blank"><img src="insta.png" alt="Instagram" width="30"></a> Instagram
+            <a href="https://www.youtube.com/@satvikpatelvlogs" target="_blank"><img src="yt.png" alt="Youtube" width="30"></a>YouTube
+            <br><br>
+            <p>Developed By Satvik Patel.</p>
+        </footer>
+    </section>
+    </body>
+
+</html>
