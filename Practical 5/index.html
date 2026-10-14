@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CityCare Hospital - Patient Registration</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="title">
+        
+        <h1><i class="fa-solid fa-notes-medical"></i> CityCare Hospital</h1>
+        <h5><i class="fa-solid fa-location-dot"></i> Anand, Gujarat, India</h5>
+        <h2><i class="fa-solid fa-person"></i> New Patient Registration</h2>
+        </div>
+
+        <form id="registrationForm" novalidate>
+            <div class="form-group">
+                <label for="fullName"><i class="fa-solid fa-user"></i> Full Name *</label>
+                <input type="text" id="fullName" placeholder="Enter your full name" maxlength="50" required>
+                <span class="error" id="nameError"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="email"><i class="fa-solid fa-envelope"></i> Email Address *</label>
+                <input type="email" id="email" placeholder="example@email.com" maxlength="100" required>
+                <span class="error" id="emailError"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="mobile"><i class="fa-solid fa-phone"></i> Mobile Number *</label>
+                <input type="tel" id="mobile" placeholder="Enter 10-digit mobile number" maxlength="10" required>
+                <span class="error" id="mobileError"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="dob"><i class="fa-solid fa-calendar"></i> Date of Birth *</label>
+                <input type="date" id="dob" required>
+                <span class="error" id="dobError"></span>
+            </div>
+
+            <div class="form-group">
+                <label><i class="fa-solid fa-venus-mars"></i> Gender *</label>
+                <div class="radio-group">
+                    <label><input type="radio" name="gender" value="Male"> Male</label>
+                    <label><input type="radio" name="gender" value="Female"> Female</label>
+                    <label><input type="radio" name="gender" value="Other"> Other</label>
+                </div>
+                <span class="error" id="genderError"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="bloodGroup"><i class="fa-solid fa-droplet"></i> Blood Group *</label>
+                <select id="bloodGroup" required>
+                    <option value="">-- Select Blood Group --</option>
+                    <option>A+</option>
+                    <option>A-</option>
+                    <option>B+</option>
+                    <option>B-</option>
+                    <option>AB+</option>
+                    <option>AB-</option>
+                    <option>O+</option>
+                    <option>O-</option>
+                </select>
+                <span class="error" id="bloodError"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="address"><i class="fa-solid fa-house"></i> Address *</label>
+                <textarea id="address" placeholder="Enter your address" maxlength="200" required></textarea>
+                <span class="error" id="addressError"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="password"><i class="fa-solid fa-lock"></i> Password *</label>
+                <input type="password" id="password" placeholder="Enter password" minlength="8" maxlength="30" required>
+                <div class="strength" id="passwordStrength"></div>
+                <span class="error" id="passwordError"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="confirmPassword"><i class="fa-solid fa-key"></i> Confirm Password *</label>
+                <input type="password" id="confirmPassword" placeholder="Re-enter password" required>
+                <span class="error" id="confirmPasswordError"></span>
+            </div>
+
+            <div class="form-group file-group">
+                <label for="document"><i class="fa-solid fa-file"></i> Upload ID Proof</label>
+                <input type="file" id="document" accept=".jpg,.jpeg,.png,.pdf">
+                <span class="error" id="fileError"></span>
+            </div>
+
+            <div class="form-group checkbox-group">
+                <label><input type="checkbox" id="terms"> I confirm that the information provided is correct.</label>
+            </div>
+            <span class="error" id="termsError"></span>
+            <h4>* indicates mandatory fields.</h4>
+            <br>
+            <div class="button">
+            <button type="reset">Reset</button>
+            <button type="submit">Register Patient</button>
+            </div>
+            <div class="success-message" id="successMessage"></div>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
