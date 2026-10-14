@@ -3,7 +3,7 @@
 All practicals of the **WTF Lab** course, collected in one repository.
 
 ![Made by](https://img.shields.io/badge/Made%20by-satvikhpatel-orange)
-![Practicals](https://img.shields.io/badge/Practicals-4-white)
+![Practicals](https://img.shields.io/badge/Practicals-5-white)
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen)
 
 ---
@@ -20,6 +20,7 @@ WTF/
 ├── Practical 2/
 ├── Practical 3/
 ├── Practical 4/
+├── Practical 5/
 └── README.md
 ```
 
@@ -31,11 +32,12 @@ WTF/
 | 2 | Department of Computer Science & Engineering | [Practical 2](./Practical%202) |
 | 3 | Secure Bank Ltd. | [Practical 3](./Practical%203) |
 | 4 | ShopeEase - Online Store | [Practical 4](./Practical%204) |
+| 5 | CityCare Hospital - Patient Registration | [Practical 5](./Practical%205) |
 
 ## 🛠️ Technologies Used
 
 - HTML, CSS, JavaScript
-- Node.js / Python / PHP
+- Node.js / Python / PHP (Upcoming)
 - VS Code, Git, GitHub
 
 ## 🚀 Getting Started
