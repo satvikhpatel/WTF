@@ -69,76 +69,101 @@ select,
 textarea {
     width: 100%;
     padding: 10px;
+    border: none;
     border: 2px solid #1565c0;
     border-radius: 25px;
     font-size: 15px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background: white;
+}
+input[type="file"]
+{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border: 2px solid #1565c0;
+    border-radius: 25px;
+    font-size: 15px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background: white;
 }
 input[type="text"]:focus 
 {
+    border: none;
     border: 2px solid;
     border-color: #00e5ff;
     box-shadow: 0 0 12px #00e5ff;
+    outline: none;
 }
 input[type="email"]:focus 
 {
     border: 2px solid;
     border-color: #00e5ff;
     box-shadow: 0 0 12px #00e5ff;
+    outline: none;
 }
 input[type="tel"]:focus 
 {
     border: 2px solid;
     border-color: #00e5ff;
     box-shadow: 0 0 12px #00e5ff;
+    outline: none;
 }
 input[type="date"]:focus 
 {
     border: 2px solid;
     border-color: #00e5ff;
     box-shadow: 0 0 12px #00e5ff;
+    outline: none;
 }
 input[type="radio"]:focus 
 {
     border: 2px solid;
     border-color: #00e5ff;
     box-shadow: 0 0 12px #00e5ff;
-    border-radius: solid 1000px;
+    border-radius: 50%;
+    outline: none;
 }
 input[type="password"]:focus 
 {
     border: 2px solid;
     border-color: #00e5ff;
     box-shadow: 0 0 12px #00e5ff;
+    outline: none;
 }
 input[type="file"]:focus 
 {
     border: 2px solid;
     border-color: #00e5ff;
     box-shadow: 0 0 8px #00e5ff;
+    outline: none;
 }
 textarea:focus
 {
     border: 2px solid;
     border-color: #00e5ff;
     box-shadow: 0 0 8px #00e5ff;
+    outline: none;
 }
 select:focus
 {
     border: 2px solid;
     border-color: #00e5ff;
     box-shadow: 0 0 8px #00e5ff;
+    outline: none;
 }
 .radio-group,
 .checkbox-group {
     display: flex;
     gap: 15px;
     align-items: center;
+    outline: none;
 }
 
 .radio-group input,
 .checkbox-group input {
     width: auto;
+    outline: none;
 }
 
 .error {
@@ -155,24 +180,73 @@ select:focus
     font-weight: bold;
     margin-top: 15px;
 }
+.password-input-wrapper {
+    position: relative;
+    width: 100%;
+}
 
-button {
+.password-input-wrapper input {
+    padding-right: 45px; /* Leaves space so text doesn't hide behind the icon */
+}
+
+/* Explicit styling for the show/hide icon buttons */
+#toggleConfirmPassword, #togglePassword {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: linear-gradient(335deg, rgb(156, 242, 255), rgb(250, 206, 214));
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    color: #1565c0;
+    font-size: 16px;
+    width: auto;
+    padding: 7px;
+    margin: 0;
+    box-shadow: none;
+}
+input[type="file"]::file-selector-button {
+    background: linear-gradient(335deg, #00e5ff, #fbb0f0);
+    color: #083493;
+    border: none;
+    border-radius: 15px;
+    padding: 8px 18px;
+    margin-right: 12px;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+input[type="file"]::file-selector-button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px #00e5ff;
+}
+.buttonAlign
+{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+}
+button[type="submit"], button[type="reset"] {
     width: 100%;
     display: inline-block;
-    padding: 12px;
+    padding: 12px;  
     background:linear-gradient(335deg, #00e5ff, #fbb0f0);
     cursor: pointer;
     overflow: hidden;
     position: relative;
     transition: 0.4s;
-    color: #1565c0;
+    color: #083493;
     border: none;
     border-radius: 15px;
     font-size: 20px;
     margin-bottom: 15px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-button::before
+button[type="submit"]::before, button[type="reset"]::before
 {
     content: "";
     position: absolute;
@@ -181,10 +255,11 @@ button::before
     background: rgba(255, 255, 255, 0.3);
     border-radius: 50%;
     top: -150%;
-    left: -50%;
+    left: -40%;
     transition: 0.6s;
 }
-button:hover::before {
+button[type="submit"]:hover::before, button[type="reset"]:hover::before 
+{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);

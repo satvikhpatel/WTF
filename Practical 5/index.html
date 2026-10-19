@@ -76,14 +76,24 @@
 
             <div class="form-group">
                 <label for="password"><i class="fa-solid fa-lock"></i> Password *</label>
-                <input type="password" id="password" placeholder="Enter password" minlength="8" maxlength="30" required>
-                <div class="strength" id="passwordStrength"></div>
-                <span class="error" id="passwordError"></span>
+                <div class="password-input-wrapper">
+                    <input type="password" id="password" placeholder="Enter password" minlength="8" maxlength="30" required>
+                    <button type="button" id="togglePassword">
+                        <i class="fa-solid fa-eye" id="eyeIcon"></i>
+                    </button>
+                </div>
+                    <div class="strength" id="passwordStrength"></div>
+                    <span class="error" id="passwordError"></span>
             </div>
 
             <div class="form-group">
                 <label for="confirmPassword"><i class="fa-solid fa-key"></i> Confirm Password *</label>
-                <input type="password" id="confirmPassword" placeholder="Re-enter password" required>
+                <div class="password-input-wrapper">
+                    <input type="password" id="confirmPassword" placeholder="Re-enter password" required>
+                    <button type="button" id="toggleConfirmPassword">
+                        <i class="fa-solid fa-eye" id="confirmEyeIcon"></i>
+                    </button>
+                </div>
                 <span class="error" id="confirmPasswordError"></span>
             </div>
 
@@ -99,7 +109,7 @@
             <span class="error" id="termsError"></span>
             <h4>* indicates mandatory fields.</h4>
             <br>
-            <div class="button">
+            <div class="buttonAlign">
             <button type="reset">Reset</button>
             <button type="submit">Register Patient</button>
             </div>

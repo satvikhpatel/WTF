@@ -10,6 +10,12 @@ const confirmPassword = document.getElementById("confirmPassword");
 const documentFile = document.getElementById("document");
 const terms = document.getElementById("terms");
 
+const togglePassword = document.getElementById("togglePassword");
+const eyeIcon = document.getElementById("eyeIcon");
+
+const toggleConfirmPassword = document.getElementById("toggleConfirmPassword");
+const confirmEyeIcon = document.getElementById("confirmEyeIcon");
+
 const nameRegex = /^[A-Za-z]+(?:\s[A-Za-z]+)*$/;
 const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
 const mobileRegex = /^[6-9]\d{9}$/;
@@ -22,6 +28,26 @@ function clearErrors() {
 
     document.getElementById("successMessage").textContent = "";
 }
+
+// Toggle Password Visibility Logic
+togglePassword.addEventListener("click", function() {
+    const type = password.getAttribute("type") === "password" ? "text" : "password";
+    password.setAttribute("type", type);
+    
+    // Toggle eye icon class
+    eyeIcon.classList.toggle("fa-eye");
+    eyeIcon.classList.toggle("fa-eye-slash");
+});
+
+// Toggle Confirm Password Visibility Logic
+toggleConfirmPassword.addEventListener("click", function() {
+    const type = confirmPassword.getAttribute("type") === "password" ? "text" : "password";
+    confirmPassword.setAttribute("type", type);
+    
+    // Toggle eye icon class
+    confirmEyeIcon.classList.toggle("fa-eye");
+    confirmEyeIcon.classList.toggle("fa-eye-slash");
+});
 
 password.addEventListener("input", function() {
     const value = password.value;
