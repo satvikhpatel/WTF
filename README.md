@@ -32,7 +32,11 @@ WTF/
 | 2 | Department of Computer Science & Engineering | [Practical 2](./Practical%202) |
 | 3 | Secure Bank Ltd. | [Practical 3](./Practical%203) |
 | 4 | ShopeEase - Online Store | [Practical 4](./Practical%204) |
+<<<<<<< HEAD
 | 5 | CityCare - Patient registration | [Practical 5](./Practical%205) |
+=======
+| 5 | CityCare Hospital - Patient Registration | [Practical 5](./Practical%205) |
+>>>>>>> 969cf017a9c65e36431ea012b7c1011dc015a2e8
 
 ## 🛠️ Technologies Used
 
